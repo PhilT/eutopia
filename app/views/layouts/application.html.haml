@@ -1,0 +1,13 @@
+!!! XML
+!!! 5
+
+%html
+  %head
+    %title Form Test
+    = include_stylesheets :base
+    = include_javascripts :base
+    = csrf_meta_tag
+
+  %body
+    = yield
+
