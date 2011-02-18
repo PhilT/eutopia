@@ -3,6 +3,7 @@
 = semantic_form_for @post, :html => { :class => 'ui-widget' } do |f|
   = f.input :title, :required => true, :input_html => { :class => 'ui-widget-content ui-corner-all' }
   = f.input :content, :required => true, :input_html => { :class => 'ui-widget-content ui-corner-all' }
-  = f.input :tags, :required => true, :input_html => { :class => 'ui-widget-content ui-corner-all' }
+  = f.input :category, :input_html => { :class => 'ui-widget-content ui-corner-all' }
+  = f.input :tags, :as => :check_boxes, :input_html => { :class => 'ui-widget-content ui-corner-all' }
   = f.commit_button
 
