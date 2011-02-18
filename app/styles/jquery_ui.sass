@@ -10,18 +10,23 @@ textarea
   height: 150px
 
 form.formtastic
-  label
-    display: block
-  li
-    display: block
-    margin: 10px
-  textarea, select, input
-    padding: 3px
-    width: 400px
-  select
-    width: 408px
-  input[type="submit"]
-    width: auto
+  fieldset
+    border: none
+    margin: 10px 0 0 0
+    padding: 0
+
+    label
+      display: block
+      margin-top: 10px
+    li
+      display: block
+    textarea, select, input
+      padding: 3px
+      width: 400px
+    select
+      width: 408px
+    input[type="submit"], input[type="checkbox"]
+      width: auto
 
 .ui-widget
   font-family: Verdana,Arial,sans-serif
