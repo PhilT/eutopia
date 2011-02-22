@@ -1,19 +1,25 @@
-source 'http://rubygems.org'
+source :rubygems
 
 gem 'rails', '~> 3.0'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
-gem 'aws-s3', :require => 'aws/s3'
-gem 'capistrano'
-gem 'formtastic'
-gem 'haml'
-gem 'hoptoad_notifier'
-gem 'jammit'
-gem 'sass'
-gem 'whenever'
-gem 'with_action'
-gem 'will_paginate'
+gem 'aws-s3', :require => 'aws/s3'    # storage
+gem 'capistrano'                      # deployment
+gem 'carrierwave'                     # file uploads
+gem 'delayed_job'                     # scheduling
+gem 'devise'                          # authentication
+gem 'formtastic'                      # HTML forms
+gem 'friendly_id'                     # slugs
+gem 'haml'                            # templating
+gem 'hoptoad_notifier'                # error logging/notification
+gem 'jammit'                          # asset packaging
+gem 'kaminari'                        # pagination
+gem 'passenger'                       # web server
+gem 'sass'                            # stylesheets
+gem 'simple-navigation'               # menus/breadcrumbs
+gem 'whenever'                        # scheduling
+gem 'with_action'                     # multi-button forms
 
 group :development, :test do
   gem 'factory_girl'
