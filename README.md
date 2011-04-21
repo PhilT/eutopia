@@ -1,4 +1,11 @@
-Test formtastic with jQuery UI CSS styling to create a clean, simple, styled form.
+My current thinking on the best tools and approaches to Rails 3 apps
+
+* jQuery + UI
+* Formtastic
+* Haml
+* Sass
+* Field tips
+* HTML 5 element support
 
 Hit http://localhost:3000/posts/new to test.
 
