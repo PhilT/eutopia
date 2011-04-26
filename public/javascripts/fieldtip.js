@@ -15,18 +15,16 @@ $(function(){
     }
   });
 
-  $('.fieldtip').live('each', function(){
+  $('.fieldtip').each(function(){
     if($(this).val() == ""){
       $(this).addClass("fieldtip_active");
-      $(this).val(this.title);
+      $(this).val($(this)[0].title);
     }
   });
 
   $('form').submit(function(){
-    $('.fieldtip').each(function(){
-      if($(this).attr('title') == $(this).val()){
-        $(this).val('');
-      }
+    $('.fieldtip_active').each(function(){
+      $(this).val('');
     });
   });
 });
