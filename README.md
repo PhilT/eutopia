@@ -6,6 +6,9 @@ My current thinking on the best tools and approaches to Rails 3 apps
 * Sass
 * Field tips
 * HTML 5 element support
+* My own asset packager, minit
+* RSpec with watchr (not configured yet)
+
 
 Hit http://localhost:3000/posts/new to test.
 

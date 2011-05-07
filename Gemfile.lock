@@ -99,6 +99,9 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    minit (0.0.1)
+      cssmin
+      jsmin
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
@@ -184,7 +187,6 @@ DEPENDENCIES
   capistrano
   capybara
   carrierwave
-  cssmin
   delayed_job
   devise
   factory_girl
@@ -192,8 +194,8 @@ DEPENDENCIES
   friendly_id
   haml
   hoptoad_notifier
-  jsmin
   kaminari
+  minit
   passenger
   rails (~> 3.0)
   rspec-rails

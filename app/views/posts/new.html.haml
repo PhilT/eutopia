@@ -3,7 +3,7 @@
 
 %article
   = semantic_form_for @post, :html => { :class => 'ui-widget' } do |f|
-    - f.inputs do
+    = f.inputs do
       = f.input :title, :required => true, :input_html => { :class => 'ui-widget-content ui-corner-all' }
       = f.input :content, :required => true, :input_html => { :class => 'ui-widget-content ui-corner-all' }
       = f.input :category, :input_html => { :class => 'ui-widget-content ui-corner-all' }
