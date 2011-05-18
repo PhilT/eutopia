@@ -1,0 +1,72 @@
+@import css3_mixins
+@import overlay
+
+body
+  font-family: Verdana,Arial,sans-serif
+
+h2
+  font-size: 1.5em
+  margin-top: 20px
+  padding: 5px
+
+textarea
+  height: 100px
+
+form.formtastic
+  fieldset
+    border: none
+    margin: 10px 0 0 0
+    padding: 0
+
+    label
+      display: block
+      margin-top: 10px
+    li
+      display: block
+    textarea, select, input
+      padding: 3px
+      width: 400px
+    select
+      width: 408px
+    input[type="submit"], input[type="checkbox"]
+      width: auto
+      float: left
+
+.notice, .warning, .error
+  +border-radius(5px)
+  margin: 10px
+  padding: 10px
+  font:
+    size: 80%
+    weight: bold
+
+.notice
+  border: 2px solid #393
+  background: #9e9
+  color: #363
+
+.warning
+  border: 2px solid #993
+  background: #ee9
+  color: #663
+
+.error
+  border: 2px solid #933
+  background: #e99
+  color: #633
+
+.overlay
+  +overlay(450px, 500px)
+  +border-radius(10px)
+
+section
+  margin: 10px
+
+li.post
+  +border-radius(10px)
+  display: block
+  margin: 10px 50px
+  padding: 15px
+  border: 3px solid #888
+  background: #ddf
+

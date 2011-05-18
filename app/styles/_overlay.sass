@@ -1,0 +1,14 @@
+
+
+=overlay($width, $height, $border = 5px, $padding = 15px)
+  position: fixed
+  background: #eee
+  border: $border solid #333
+  width: $width - ($border * 2 + $padding * 2)
+  height: $height - ($border * 2 + $padding * 2)
+  top: 50%
+  left: 50%
+  margin-top: -($height / 2)
+  margin-left: -($width / 2)
+  padding: $padding
+
